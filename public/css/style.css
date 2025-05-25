@@ -1,0 +1,125 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+.formulario, .form {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__field, input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+
+.select2-container {
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+}
+
+
+.select2-container--default .select2-selection--single {
+    height: 42px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 4px !important;
+    padding: 6px 12px !important;
+    box-sizing: border-box !important;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 30px !important;
+}
+
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 36px !important;
+    top: 3px !important;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    margin-top: 1rem;
+}
+
+.tabla th, .tabla td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+
+
+.nav {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav li a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+}
