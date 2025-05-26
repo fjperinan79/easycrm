@@ -3,6 +3,7 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 ?>
+
 <header class="header">
     <img src="../public/img/logo.png" alt="EasyCRM" class="logo">
     <nav>
@@ -15,6 +16,8 @@ if (session_status() === PHP_SESSION_NONE) {
                 <li><a href="../views/reportes.php">Reportes</a></li>
                 <li><a href="../views/interacciones.php">Interacciones</a></li>
                 <li><a href="../views/contacto.php">Contacto</a></li>
+                <li><a href="../views/usuarios.php">Usuarios</a></li>
+                <li><a href="../views/nuevo_usuario.php">Nuevo Usuario</a></li>
             <?php elseif (isset($_SESSION["rol"]) && $_SESSION["rol"] === "usuario"): ?>
                 <li><a href="../views/tickets.php">Tickets</a></li>
                 <li><a href="../views/interacciones.php">Interacciones</a></li>
