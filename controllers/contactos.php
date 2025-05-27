@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $res = $conn->prepare("SELECT id FROM Contactos WHERE email = ?");
+    $res = $conn->prepare("SELECT id FROM contactos WHERE email = ?");
     $res->bind_param("s", $email);
     $res->execute();
     $res->store_result();
@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    $stmt = $conn->prepare("INSERT INTO Contactos (nombre, empresa, telefono, email, direccion, notas, producto_id) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO contactos (nombre, empresa, telefono, email, direccion, notas, producto_id) VALUES (?, ?, ?, ?, ?, ?, ?)");
     $stmt->bind_param("ssssssi", $nombre, $empresa, $telefono, $email, $direccion, $notas, $producto_id);
     $stmt->execute();
     header("Location: ../views/contactos.php?success=1");
