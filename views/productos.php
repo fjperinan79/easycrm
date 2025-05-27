@@ -22,7 +22,6 @@ $productos = $modelo->listar();
     <form method="post" action="../controllers/productos.php" class="form">
         <input name="nombre" placeholder="Nombre" required class="form__field">
         <input name="categoria" placeholder="Categoría" required class="form__field">
-        <input name="precio" placeholder="Precio" class="form__field">
         <button type="submit" class="btn">Añadir producto</button>
     </form>
 
