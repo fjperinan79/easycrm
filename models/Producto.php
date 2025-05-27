@@ -5,7 +5,7 @@ class Producto {
         $this->conn = $db;
     }
 
-    public function crear($nombre, $categoria, $precio, $stock) {
+    public function crear($nombre, $categoria) {
         $stmt = $this->conn->prepare("INSERT INTO productos (nombre, tipo_producto, fecha_alta) VALUES (?, ?, NOW())");
         $stmt->bind_param("ss", $nombre, $categoria);
         return $stmt->execute();
