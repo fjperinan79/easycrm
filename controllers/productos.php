@@ -15,9 +15,9 @@ if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["baja_id"])) {
 
 if (
     $_SERVER["REQUEST_METHOD"] === "POST" &&
-    isset($_POST["nombre"], $_POST["categoria"], $_POST["precio"], $_POST["stock"])
+    isset($_POST["nombre"], $_POST["categoria"])
 ) {
-    $modelo->crear($_POST["nombre"], $_POST["categoria"], $_POST["precio"], $_POST["stock"]);
+    $modelo->crear($_POST["nombre"], $_POST["categoria"]);
     header("Location: ../views/productos.php?success=1");
     exit();
 }
