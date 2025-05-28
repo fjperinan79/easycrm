@@ -57,7 +57,7 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
     <?php if (!empty($contactos)): ?>
         <h3>Listado de contactos</h3>
         <table class="tabla">
-            <tr><th>Nombre</th><th>Empresa</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Producto</th></tr>
+            <tr><th>Nombre</th><th>Empresa</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Notas</th><th>Producto</th></tr>
             <?php foreach ($contactos as $c): ?>
                 <tr>
                     <td><?= htmlspecialchars($c["nombre"]) ?></td>
@@ -65,7 +65,8 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
                     <td><?= htmlspecialchars($c["telefono"]) ?></td>
                     <td><?= htmlspecialchars($c["email"]) ?></td>
                     <td><?= htmlspecialchars($c["direccion"]) ?></td>
-                    <td><?= htmlspecialchars($c["producto_id"]) ?></td>
+                    <td><?= htmlspecialchars($c["notas"]) ?></td>
+                    <td><?= htmlspecialchars($c["producto"]) ?></td>
                 </tr>
             <?php endforeach; ?>
         </table>
