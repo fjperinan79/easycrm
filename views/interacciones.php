@@ -12,7 +12,7 @@ $res = $conn->query("
 $interacciones = $res->fetch_all(MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Interacciones</title>
     <link rel="stylesheet" href="../public/css/style.css">

@@ -20,7 +20,7 @@ if (!$usuario) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Editar usuario</title>
     <link rel="stylesheet" href="../public/css/style.css">

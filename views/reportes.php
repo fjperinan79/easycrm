@@ -4,7 +4,7 @@ require_admin();
 $reportes = $_SESSION["reportes"] ?? [];
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Reportes</title>
     <link rel="stylesheet" href="../public/css/style.css">

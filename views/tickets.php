@@ -20,7 +20,7 @@ $usuarios = $conn->query("SELECT ID, nombre FROM usuarios")->fetch_all(MYSQLI_AS
 $edit_ticket = isset($_GET["edit"]) ? $modelo->obtenerPorID($_GET["edit"]) : null;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Tickets</title>
     <link rel="stylesheet" href="../public/css/style.css">

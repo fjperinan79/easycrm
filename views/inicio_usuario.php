@@ -3,7 +3,7 @@ require_once '../includes/auth.php';
 require_user();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Inicio Usuario</title>
     <link rel="stylesheet" href="../public/css/style.css">

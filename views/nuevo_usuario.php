@@ -6,7 +6,7 @@ if (!isset($_SESSION["usuario"]) || $_SESSION["rol"] !== "admin") {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Crear nuevo usuario</title>
     <link rel="stylesheet" href="../public/css/style.css">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Login</title>
     <link rel="stylesheet" href="../public/css/style.css">

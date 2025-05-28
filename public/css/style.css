@@ -74,6 +74,7 @@ body {
 .tabla {
     width: 100%;
     border-collapse: collapse;
+    border: 1px solid #ccc;
     background-color: #fff;
     margin-top: 1rem;
 }

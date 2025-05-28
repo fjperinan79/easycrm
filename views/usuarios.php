@@ -12,7 +12,7 @@ $modelo = new Usuario($conn);
 $usuarios = $modelo->listar(); // método que deberías tener en Usuario.php
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Listado de usuarios</title>
     <link rel="stylesheet" href="../public/css/style.css">

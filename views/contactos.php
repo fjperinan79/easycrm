@@ -29,7 +29,7 @@ $contactos = $modelo->listar();
 $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Contactos</title>
     <link rel="stylesheet" href="../public/css/style.css">
@@ -56,7 +56,7 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
 
     <?php if (!empty($contactos)): ?>
         <h3>Listado de contactos</h3>
-        <table border="1" class="tabla">
+        <table class="tabla">
             <tr><th>Nombre</th><th>Empresa</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Producto</th></tr>
             <?php foreach ($contactos as $c): ?>
                 <tr>

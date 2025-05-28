@@ -20,8 +20,7 @@ $totalInteracciones = $conn->query("SELECT COUNT(*) FROM interacciones")->fetch_
 ?>
 
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="es">
     <title>Panel de control</title>
     <link rel="stylesheet" href="../public/css/style.css">
     <style>

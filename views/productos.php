@@ -10,7 +10,7 @@ $modelo = new Producto($conn);
 $productos = $modelo->listar();
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <title>Productos</title>
     <link rel="stylesheet" href="../public/css/style.css">
