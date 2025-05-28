@@ -43,10 +43,10 @@ $usuarios = $modelo->listar(); // método que deberías tener en Usuario.php
                 <td><?= htmlspecialchars($usuario['email']) ?></td>
                 <td><?= htmlspecialchars($usuario['rol']) ?></td>
                 <td>
-                   <a href='editar_usuario.php?id=<?= $usuario["ID"] ?>' class='btn btn-sm'>Editar</a>
+                   <a href='editar_usuario.php?id=<?= $usuario["ID"] ?>' class='btn'>Editar</a>
                    <form method="POST" action="../controllers/usuario.php" style="display:inline;" onsubmit="return confirm('¿Estás seguro de que deseas eliminar este usuario?');">
                         <input type="hidden" name="id" value="<?= $usuario['ID'] ?>">
-                        <button type="submit" name="accion" value="eliminar" class="btn btn-sm btn-danger">Eliminar</button>
+                        <button type="submit" name="accion" value="eliminar" class="btn">Eliminar</button>
                     </form>
 
                 </td>
