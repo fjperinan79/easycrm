@@ -6,6 +6,7 @@ if (session_status() === PHP_SESSION_NONE) {
 
 <header class="header">
     <img src="../public/img/logo.png" alt="EasyCRM" class="logo">
+    <button id="menu-toggle" class="menu-toggle">☰</button>
     <nav>
         <ul class="nav">
             <?php if (isset($_SESSION["rol"]) && $_SESSION["rol"] === "admin"): ?>
@@ -27,4 +28,12 @@ if (session_status() === PHP_SESSION_NONE) {
     <form action="../controllers/logout.php" method="post">
         <button type="submit" class="btn">Cerrar sesión</button>
     </form>
+
+    <script>
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav').classList.toggle('show');
+    });
+    </script>
+
+
 </header>
