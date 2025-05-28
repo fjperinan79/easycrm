@@ -11,7 +11,7 @@ if (session_status() === PHP_SESSION_NONE) {
         <ul class="nav">
             <?php if (isset($_SESSION["rol"]) && $_SESSION["rol"] === "admin"): ?>
                 <li><a href="../views/panel.php">Panel</a></li>
-                <li><a href="../views/contactos.php">Contactos</a></li>
+                <li><a href="../views/contactos.php">Clientes</a></li>
                 <li><a href="../views/productos.php">Productos</a></li>
                 <li><a href="../views/tickets.php">Tickets</a></li>
                 <li><a href="../views/reportes.php">Reportes</a></li>

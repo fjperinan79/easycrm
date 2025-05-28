@@ -37,7 +37,7 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
 <body>
 <?php include '../includes/header.php'; ?>
 <section class="form-signin w-100 m-auto section">
-    <div class="titulo"><h1 class="h3 mb-3 fw-normal">Gestión de contactos</h1></div>
+    <div class="titulo"><h1 class="h3 mb-3 fw-normal">Gestión de clientes</h1></div>
     <form method="POST" action="../controllers/contactos.php" class="form">
         <input type="text" name="nombre" placeholder="Nombre" required class="form__field" value="<?= htmlspecialchars($_GET['nombre'] ?? '') ?>">
         <input type="text" name="empresa" placeholder="Empresa" class="form__field" value="<?= htmlspecialchars($_GET['empresa'] ?? '') ?>">
@@ -51,11 +51,11 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
                 <option value="<?= $p["ID"] ?>"><?= htmlspecialchars($p["nombre"]) ?></option>
             <?php endforeach; ?>
         </select>
-        <button type="submit" class="btn btn-primary">Añadir contacto</button>
+        <button type="submit" class="btn btn-primary">Añadir cliente</button>
     </form>
 
     <?php if (!empty($contactos)): ?>
-        <h3>Listado de contactos</h3>
+        <h3>Listado de clientes</h3>
         <table class="tabla">
             <tr><th>Nombre</th><th>Empresa</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Notas</th><th>Producto</th></tr>
             <?php foreach ($contactos as $c): ?>
