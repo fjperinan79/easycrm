@@ -26,6 +26,10 @@ require_once '../models/Contacto.php';
 $modelo = new Contacto($conn);
 $contactos = $modelo->listar();
 
+if (isset($_GET['buscar_nombre'])) {
+    $contactos = array_filter($contactos, fn($c) => $c['nombre'] == $_GET['buscar_nombre']);
+}
+
 $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_ASSOC);
 ?>
 <!DOCTYPE html>
@@ -55,6 +59,11 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
     </form>
 
     <?php if (!empty($contactos)): ?>
+        <form method="get" class="form" style="max-width:600px;">
+            <input type="text" name="buscar_nombre" placeholder="Buscar cliente por nombre" class="form__field">
+            <button type="submit" class="btn">Buscar</button>
+            <a href="../views/contactos.php" style="display:inline;" class="btn">Eliminar filtros</a>
+        </form>
         <h3>Listado de clientes</h3>
         <table class="tabla">
             <tr><th>Nombre</th><th>Empresa</th><th>Teléfono</th><th>Email</th><th>Dirección</th><th>Notas</th><th>Producto</th></tr>

@@ -74,7 +74,7 @@ $edit_ticket = isset($_GET["edit"]) ? $modelo->obtenerPorID($_GET["edit"]) : nul
     </form>
 
     <?php if (!empty($tickets)): ?>
-        <form method="get" class="form" style="max-width:300px;">
+        <form method="get" class="form" style="max-width:600px;">
             <input type="number" name="buscar_id" placeholder="Buscar ticket por ID" class="form__field">
             <button type="submit" class="btn">Buscar</button>
         </form>
