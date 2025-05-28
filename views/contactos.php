@@ -45,7 +45,7 @@ $productos = $conn->query("SELECT ID, nombre FROM productos")->fetch_all(MYSQLI_
         <input type="email" name="email" placeholder="Correo electrónico" required class="form__field" value="<?= htmlspecialchars($_GET['email'] ?? '') ?>">
         <input type="text" name="direccion" placeholder="Dirección" class="form__field" value="<?= htmlspecialchars($_GET['direccion'] ?? '') ?>">
         <textarea name="notas" placeholder="Notas" class="form__field"><?= htmlspecialchars($_GET['notas'] ?? '') ?></textarea>
-        <select name="producto_id" class="form__field">
+        <select name="producto_id" required class="form__field">
             <option value="">Asociar a producto</option>
             <?php foreach ($productos as $p): ?>
                 <option value="<?= $p["ID"] ?>"><?= htmlspecialchars($p["nombre"]) ?></option>
