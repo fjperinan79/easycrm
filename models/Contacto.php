@@ -13,7 +13,7 @@ class Contacto {
     }
 
     public function listar() {
-        $result = $this->conn->query("SELECT * FROM contactos");
+        $result = $this->conn->query("SELECT c.nombre as nombre, empresa, telefono, email, direccion, notas, p.nombre as producto FROM contactos c left join productos p on c.producto_id = p.ID");
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 }
