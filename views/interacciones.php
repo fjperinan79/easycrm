@@ -38,8 +38,13 @@ $interacciones = $res->fetch_all(MYSQLI_ASSOC);
             <?php endwhile; ?>
         </select>
 
+        
         <label for="tipo_interaccion">Tipo de interacción</label>
-        <input type="text" name="tipo_interaccion" required class="form__field">
+        <select id="tipo_interaccion" name="tipo_interaccion">
+            <option value="llamada">Llamada</option>
+            <option value="email">Email</option>
+            <option value="chat">Chat</option>
+        </select>
 
         <label for="notas">Notas</label>
         <textarea name="notas" class="form__field"></textarea>
