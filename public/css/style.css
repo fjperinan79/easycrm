@@ -143,11 +143,6 @@ header {
     cursor: pointer;
 }
 
-/* Comportamiento por defecto */
-.nav {
-    display: flex;
-}
-
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .menu-toggle {
