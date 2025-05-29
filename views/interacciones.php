@@ -16,7 +16,7 @@ $interacciones = $res->fetch_all(MYSQLI_ASSOC);
 <head>
     <title>Interacciones</title>
     <link rel="stylesheet" href="../public/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
@@ -47,7 +47,7 @@ $interacciones = $res->fetch_all(MYSQLI_ASSOC);
         </select>
 
         <label for="notas">Notas</label>
-        <textarea name="notas" class="form__field"></textarea>
+        <textarea id="notas" name="notas" class="form__field"></textarea>
 
         <button type="submit" class="btn">Guardar interacción</button>
     </form>
